@@ -2,51 +2,51 @@ document.addEventListener('DOMContentLoaded', () => {
 	const cardArray = [
 		{
 			name:'apple',
-			img: 'images/apple.jpg'
+			img: 'apple.jpg'
 		},
 		{
 			name:'banana',
-			img: 'images/banana.jpg'
+			img: 'banana.jpg'
 		},
 		{
 			name:'orange',
-			img: 'images/orange.jpg'
+			img: 'orange.jpg'
 		},
 		{
 			name:'grapes',
-			img: 'images/grapes.jpg'
+			img: 'grapes.jpg'
 		},
 		{
 			name:'stobarry',
-			img: 'images/stobarry.jpg'
+			img: 'stobarry.jpg'
 		},
 		{
 			name:'watermelon',
-			img: 'images/watermelon.jpg'
+			img: 'watermelon.jpg'
 		},
 		{
 			name:'apple',
-			img: 'images/apple.jpg'
+			img: 'apple.jpg'
 		},
 		{
 			name:'grapes',
-			img: 'images/grapes.jpg'
+			img: 'grapes.jpg'
 		},
 		{
 			name:'orange',
-			img: 'images/orange.jpg'
+			img: 'orange.jpg'
 		},
 		{
 			name:'stobarry',
-			img: 'images/stobarry.jpg'
+			img: 'stobarry.jpg'
 		},
 		{
 			name:'watermelon',
-			img: 'images/watermelon.jpg'
+			img: 'watermelon.jpg'
 		},
 		{
 			name:'banana',
-			img: 'images/banana.jpg'
+			img: 'banana.jpg'
 		},
 	]
 
@@ -59,12 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	var cardsWon = [];
 
 	var card_image= document.createElement('img');
-	card_image.setAttribute('src', 'images/blank.jpg');
+	card_image.setAttribute('src', 'blank.jpg');
 
 	function createBoard() {
 		for (let i = 0; i < cardArray.length; i++) {
 			var card = document.createElement('img');
-			card.setAttribute('src', 'images/blank.jpg');
+			card.setAttribute('src', 'blank.jpg');
 			card.setAttribute('data-id', i);
 			card.addEventListener('click', flipCard);
 			grid.appendChild(card);
@@ -77,12 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		const optionTwoId = cardsChoosenId[1];
 		if(cardsChoosen[0] === cardsChoosen[1]) {
 			alert('You find a match');
-			cards[optionOneId].setAttribute('src', 'images/white.jpg');
-			cards[optionTwoId].setAttribute('src', 'images/white.jpg');
+			cards[optionOneId].setAttribute('src', 'white.jpg');
+			cards[optionTwoId].setAttribute('src', 'white.jpg');
 			cardsWon.push(cardsChoosen);
 		} else {
-			cards[optionOneId].setAttribute('src', 'images/blank.jpg');
-			cards[optionTwoId].setAttribute('src', 'images/blank.jpg');
+			cards[optionOneId].setAttribute('src', 'blank.jpg');
+			cards[optionTwoId].setAttribute('src', 'blank.jpg');
 			alert('Sorry, try again');
 		}
 		cardsChoosen  = [];
