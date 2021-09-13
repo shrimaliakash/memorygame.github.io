@@ -2,51 +2,51 @@ document.addEventListener('DOMContentLoaded', () => {
 	const cardArray = [
 		{
 			name:'apple',
-			img: 'apple.jpg'
+			img: 'images/apple.jpg'
 		},
 		{
 			name:'banana',
-			img: 'banana.jpg'
+			img: 'images/banana.jpg'
 		},
 		{
 			name:'orange',
-			img: 'orange.jpg'
+			img: 'images/orange.jpg'
 		},
 		{
 			name:'grapes',
-			img: 'grapes.jpg'
+			img: 'images/grapes.jpg'
 		},
 		{
 			name:'stobarry',
-			img: 'stobarry.jpg'
+			img: 'images/stobarry.jpg'
 		},
 		{
 			name:'watermelon',
-			img: 'watermelon.jpg'
+			img: 'images/watermelon.jpg'
 		},
 		{
 			name:'apple',
-			img: 'apple.jpg'
+			img: 'images/apple.jpg'
 		},
 		{
 			name:'grapes',
-			img: 'grapes.jpg'
+			img: 'images/grapes.jpg'
 		},
 		{
 			name:'orange',
-			img: 'orange.jpg'
+			img: 'images/orange.jpg'
 		},
 		{
 			name:'stobarry',
-			img: 'stobarry.jpg'
+			img: 'images/stobarry.jpg'
 		},
 		{
 			name:'watermelon',
-			img: 'watermelon.jpg'
+			img: 'images/watermelon.jpg'
 		},
 		{
 			name:'banana',
-			img: 'banana.jpg'
+			img: 'images/banana.jpg'
 		},
 	]
 
@@ -54,17 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const grid = document.querySelector('.grid');
 	const resultDisplay = document.querySelector('#result');
+	const winnerDisplay = document.querySelector('#winner');
 	var cardsChoosen  = [];
 	var cardsChoosenId = [];
 	var cardsWon = [];
 
 	var card_image= document.createElement('img');
-	card_image.setAttribute('src', 'blank.jpg');
+	card_image.setAttribute('src', 'images/blank.jpg');
 
 	function createBoard() {
 		for (let i = 0; i < cardArray.length; i++) {
 			var card = document.createElement('img');
-			card.setAttribute('src', 'blank.jpg');
+			card.setAttribute('src', 'images/blank.jpg');
 			card.setAttribute('data-id', i);
 			card.addEventListener('click', flipCard);
 			grid.appendChild(card);
@@ -76,20 +77,21 @@ document.addEventListener('DOMContentLoaded', () => {
 		const optionOneId = cardsChoosenId[0];
 		const optionTwoId = cardsChoosenId[1];
 		if(cardsChoosen[0] === cardsChoosen[1]) {
-			alert('You find a match');
-			cards[optionOneId].setAttribute('src', 'white.jpg');
-			cards[optionTwoId].setAttribute('src', 'white.jpg');
+			cards[optionOneId].setAttribute('src', 'images/white.jpg');
+			cards[optionTwoId].setAttribute('src', 'images/white.jpg');
 			cardsWon.push(cardsChoosen);
+			cards[optionOneId].setAttribute("disabled","disabled");
+			cards[optionTwoId].setAttribute("disabled","disabled");
 		} else {
-			cards[optionOneId].setAttribute('src', 'blank.jpg');
-			cards[optionTwoId].setAttribute('src', 'blank.jpg');
-			alert('Sorry, try again');
+			cards[optionOneId].setAttribute('src', 'images/blank.jpg');
+			cards[optionTwoId].setAttribute('src', 'images/blank.jpg');
 		}
 		cardsChoosen  = [];
 		cardsChoosenId = [];
 		resultDisplay.textContent = cardsWon.length;
 		if(cardsWon.length === cardArray.length/2) {
-			resultDisplay.textContent = 'Congratulations! You them all!';
+			resultDisplay.textContent = cardsWon.length;
+			winnerDisplay.textContent = 'Congratulations! You them all!';
 		}
 	}
 
