@@ -1,6 +1,7 @@
 .grid {
 	display: flex;
 	flex-wrap: wrap;
-	min-height: 300px;
-	min-width: 400px;
+	position: absolute;
+	height: 300px;
+	width: 400px;
 }
