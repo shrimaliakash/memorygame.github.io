@@ -48,6 +48,102 @@ document.addEventListener('DOMContentLoaded', () => {
 			name:'banana',
 			img: 'banana.jpg'
 		},
+		{
+			name:'apple',
+			img: 'apple.jpg'
+		},
+		{
+			name:'banana',
+			img: 'banana.jpg'
+		},
+		{
+			name:'orange',
+			img: 'orange.jpg'
+		},
+		{
+			name:'grapes',
+			img: 'grapes.jpg'
+		},
+		{
+			name:'stobarry',
+			img: 'stobarry.jpg'
+		},
+		{
+			name:'watermelon',
+			img: 'watermelon.jpg'
+		},
+		{
+			name:'apple',
+			img: 'apple.jpg'
+		},
+		{
+			name:'grapes',
+			img: 'grapes.jpg'
+		},
+		{
+			name:'orange',
+			img: 'orange.jpg'
+		},
+		{
+			name:'stobarry',
+			img: 'stobarry.jpg'
+		},
+		{
+			name:'watermelon',
+			img: 'watermelon.jpg'
+		},
+		{
+			name:'banana',
+			img: 'banana.jpg'
+		},
+		{
+			name:'apple',
+			img: 'apple.jpg'
+		},
+		{
+			name:'banana',
+			img: 'banana.jpg'
+		},
+		{
+			name:'orange',
+			img: 'orange.jpg'
+		},
+		{
+			name:'grapes',
+			img: 'grapes.jpg'
+		},
+		{
+			name:'stobarry',
+			img: 'stobarry.jpg'
+		},
+		{
+			name:'watermelon',
+			img: 'watermelon.jpg'
+		},
+		{
+			name:'apple',
+			img: 'apple.jpg'
+		},
+		{
+			name:'grapes',
+			img: 'grapes.jpg'
+		},
+		{
+			name:'orange',
+			img: 'orange.jpg'
+		},
+		{
+			name:'stobarry',
+			img: 'stobarry.jpg'
+		},
+		{
+			name:'watermelon',
+			img: 'watermelon.jpg'
+		},
+		{
+			name:'banana',
+			img: 'banana.jpg'
+		},
 	]
 
 	cardArray.sort(() => 0.5 - Math.random());
