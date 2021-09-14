@@ -204,6 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		cardsChoosen.push(cardArray[cardId].name);
 		cardsChoosenId.push(cardId);
 		this.setAttribute('src', cardArray[cardId].img);
+		document.getElementById('sound1').play();
 		if(cardsChoosen.length == 2) {
 			setTimeout(checkForMatch, 500);
 		}
