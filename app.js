@@ -189,6 +189,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		if(cardsWon.length === cardArray.length/2) {
 			resultDisplay.textContent = cardsWon.length;
 			winnerDisplay.textContent = 'Congratulations! You them all!';
+			// var head = document.getElementsByTagName('head')[0];
+			// var newScript = document.createElement('script');
+			// newScript.src = 'level2.js';
+			// newScript.charset = 'text/javascript';
+			// head.appendChild(newScript);
+			location.reload();
+
 		}
 	}
 
