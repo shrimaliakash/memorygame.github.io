@@ -188,8 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		resultDisplay.textContent = cardsWon.length;
 		if(cardsWon.length === cardArray.length/2) {
 			resultDisplay.textContent = cardsWon.length;
-			
-			.textContent = 'Congratulations! You Won!';
+			winnerDisplay.textContent = 'Congratulations! You Won!';
 			location.reload();
 		}
 	}
