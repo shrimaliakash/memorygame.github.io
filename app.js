@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var cardsChoosen  = [];
 	var cardsChoosenId = [];
 	var cardsWon = [];
-	const level = document.getElementById('level');
+	const level = document.querySelector('#level');
 	let j = 1;
 
 	var card_image= document.createElement('img');
