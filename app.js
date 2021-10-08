@@ -154,6 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	var cardsChoosen  = [];
 	var cardsChoosenId = [];
 	var cardsWon = [];
+	const level = document.getElementById('level');
+	let j = 1;
 
 	var card_image= document.createElement('img');
 	card_image.setAttribute('src', 'blank.jpg');
@@ -189,7 +191,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		if(cardsWon.length === cardArray.length/2) {
 			resultDisplay.textContent = cardsWon.length;
 			winnerDisplay.textContent = 'Congratulations! You Won!';
-			location.reload();
+			j++;
+			level.innerHTML = j;
+			createBoard();
 		}
 	}
 
