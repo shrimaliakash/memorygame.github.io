@@ -14,3 +14,22 @@ h3 {
 	text-align: center;
 	color: white;
 }
+
+.row {
+	margin: 0px;
+	padding: 0px;
+	width: 560px;
+	height: 20px;
+}
+
+.row .col-md-6 {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.row .col-lg-6 {
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
