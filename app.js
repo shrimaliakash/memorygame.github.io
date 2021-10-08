@@ -25,16 +25,44 @@ document.addEventListener('DOMContentLoaded', () => {
 			img: 'watermelon.jpg'
 		},
 		{
+			name:'dog',
+			img: 'dog.jpg'
+		},
+		{
+			name:'elephant',
+			img: 'elephant.jpg'
+		},
+		{
+			name:'fox',
+			img: 'fox.jpg'
+		},
+		{
+			name:'monkey',
+			img: 'monkey.jpg'
+		},
+		{
+			name:'snake',
+			img: 'snake.jpg'
+		},
+		{
+			name:'tiger',
+			img: 'tiger.jpg'
+		},
+		{
 			name:'apple',
 			img: 'apple.jpg'
 		},
 		{
-			name:'grapes',
-			img: 'grapes.jpg'
+			name:'banana',
+			img: 'banana.jpg'
 		},
 		{
 			name:'orange',
 			img: 'orange.jpg'
+		},
+		{
+			name:'grapes',
+			img: 'grapes.jpg'
 		},
 		{
 			name:'stobarry',
@@ -45,56 +73,28 @@ document.addEventListener('DOMContentLoaded', () => {
 			img: 'watermelon.jpg'
 		},
 		{
-			name:'banana',
-			img: 'banana.jpg'
+			name:'dog',
+			img: 'dog.jpg'
 		},
 		{
-			name:'apple',
-			img: 'apple.jpg'
+			name:'elephant',
+			img: 'elephant.jpg'
 		},
 		{
-			name:'banana',
-			img: 'banana.jpg'
+			name:'fox',
+			img: 'fox.jpg'
 		},
 		{
-			name:'orange',
-			img: 'orange.jpg'
+			name:'monkey',
+			img: 'monkey.jpg'
 		},
 		{
-			name:'grapes',
-			img: 'grapes.jpg'
+			name:'snake',
+			img: 'snake.jpg'
 		},
 		{
-			name:'stobarry',
-			img: 'stobarry.jpg'
-		},
-		{
-			name:'watermelon',
-			img: 'watermelon.jpg'
-		},
-		{
-			name:'apple',
-			img: 'apple.jpg'
-		},
-		{
-			name:'grapes',
-			img: 'grapes.jpg'
-		},
-		{
-			name:'orange',
-			img: 'orange.jpg'
-		},
-		{
-			name:'stobarry',
-			img: 'stobarry.jpg'
-		},
-		{
-			name:'watermelon',
-			img: 'watermelon.jpg'
-		},
-		{
-			name:'banana',
-			img: 'banana.jpg'
+			name:'tiger',
+			img: 'tiger.jpg'
 		},
 		{
 			name:'apple',
@@ -188,9 +188,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		cardsChoosen  = [];
 		cardsChoosenId = [];
 		resultDisplay.textContent = cardsWon.length;
-		if(cardsWon.length === cardArray.length/2) {
+		if(cardsWon.length === 18 * j) {
 			resultDisplay.textContent = cardsWon.length;
-			winnerDisplay.textContent = 'Congratulations! You Won!';
+			for (let i = 0; i < cardArray.length; i++) {
+				var card = document.querySelector('img');
+				grid.removeChild(card);
+			}
 			j++;
 			level.innerHTML = j;
 			createBoard();
