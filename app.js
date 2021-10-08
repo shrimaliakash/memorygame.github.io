@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		for (let i = 0; i < cardArray.length; i++) {
 			var card = document.createElement('img');
 			card.setAttribute('src', 'blank.jpg');
-			card.setAttribute('data-id', i);
+			card.setAttribute('id', i);
 			card.style.margin = "20px";
 			card.addEventListener('click', flipCard);
 			grid.appendChild(card);
@@ -179,8 +179,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			cards[optionOneId].setAttribute('src', 'white.jpg');
 			cards[optionTwoId].setAttribute('src', 'white.jpg');
 			cardsWon.push(cardsChoosen);
-			cards[optionOneId].setAttribute("disabled","disabled");
-			cards[optionTwoId].setAttribute("disabled","disabled");
+			cards[optionOneId].style.pointerEvents = "none";
+			cards[optionTwoId].style.pointerEvents = "none";
 		} else {
 			cards[optionOneId].setAttribute('src', 'blank.jpg');
 			cards[optionTwoId].setAttribute('src', 'blank.jpg');
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	function flipCard() {
-		var cardId = this.getAttribute('data-id');
+		var cardId = this.getAttribute('id');
 		cardsChoosen.push(cardArray[cardId].name);
 		cardsChoosenId.push(cardId);
 		this.setAttribute('src', cardArray[cardId].img);
