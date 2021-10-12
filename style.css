@@ -2,7 +2,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	position: absolute;
-	border: 5px solid;	
+	border: 5px solid;
+	height: 100%;
 }
 
 body {
