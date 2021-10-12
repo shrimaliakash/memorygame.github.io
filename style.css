@@ -3,7 +3,7 @@
 	flex-wrap: wrap;
 	position: absolute;
 	border: 5px solid;
-	margin: 30px;
+	margin: 300px;
 }
 
 body {
@@ -27,12 +27,12 @@ h3 {
 	margin: 0px;
 	padding: 0px;
 	float: left;
-	font-size: 50px;
+	font-size: 120px;
 }
 
 .row .col-lg-6 {
 	margin: 0px;
 	padding: 0px;
-	float: right;
-	font-size: 50px;
+	float: left;
+	font-size: 120px;
 }
