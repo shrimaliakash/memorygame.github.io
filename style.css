@@ -4,6 +4,7 @@
 	position: absolute;
 	border: 5px solid;
 	height: 100%;
+	margin: 30px;
 }
 
 body {
@@ -27,10 +28,12 @@ h3 {
 	margin: 0px;
 	padding: 0px;
 	float: left;
+	font-size: 50px;
 }
 
 .row .col-lg-6 {
 	margin: 0px;
 	padding: 0px;
 	float: right;
+	font-size: 50px;
 }
