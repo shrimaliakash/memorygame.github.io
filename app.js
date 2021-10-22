@@ -72,6 +72,78 @@ document.addEventListener('DOMContentLoaded', () => {
 			name:'watermelon',
 			img: 'watermelon.jpg'
 		},
+		{
+			name:'dog',
+			img: 'dog.jpg'
+		},
+		{
+			name:'elephant',
+			img: 'elephant.jpg'
+		},
+		{
+			name:'fox',
+			img: 'fox.jpg'
+		},
+		{
+			name:'dog',
+			img: 'dog.jpg'
+		},
+		{
+			name:'elephant',
+			img: 'elephant.jpg'
+		},
+		{
+			name:'fox',
+			img: 'fox.jpg'
+		},
+		{
+			name:'apple',
+			img: 'apple.jpg'
+		},
+		{
+			name:'banana',
+			img: 'banana.jpg'
+		},
+		{
+			name:'orange',
+			img: 'orange.jpg'
+		},
+		{
+			name:'grapes',
+			img: 'grapes.jpg'
+		},
+		{
+			name:'stobarry',
+			img: 'stobarry.jpg'
+		},
+		{
+			name:'watermelon',
+			img: 'watermelon.jpg'
+		},
+		{
+			name:'dog',
+			img: 'dog.jpg'
+		},
+		{
+			name:'elephant',
+			img: 'elephant.jpg'
+		},
+		{
+			name:'fox',
+			img: 'fox.jpg'
+		},
+		{
+			name:'dog',
+			img: 'dog.jpg'
+		},
+		{
+			name:'elephant',
+			img: 'elephant.jpg'
+		},
+		{
+			name:'fox',
+			img: 'fox.jpg'
+		}
 	]
 
 	cardArray.sort(() => 0.5 - Math.random());
