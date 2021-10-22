@@ -9,44 +9,44 @@ document.addEventListener('DOMContentLoaded', () => {
 			img: 'banana.jpg'
 		},
 		{
-			name:'orange',
-			img: 'orange.jpg'
+			name:'dog',
+			img: 'dog.jpg'
+		},
+		{
+			name:'elephant',
+			img: 'elephant.jpg'
+		},
+		{
+			name:'fox',
+			img: 'fox.jpg'
 		},
 		{
 			name:'grapes',
 			img: 'grapes.jpg'
 		},
 		{
+			name:'monkey',
+			img: 'monkey.jpg'
+		},
+		{
+			name:'orange',
+			img: 'orange.jpg'
+		},
+		{
+			name:'snake',
+			img: 'snake.jpg'
+		},
+		{
 			name:'stobarry',
 			img: 'stobarry.jpg'
 		},
 		{
+			name:'tiger',
+			img: 'tiger.jpg'
+		},
+		{
 			name:'watermelon',
 			img: 'watermelon.jpg'
-		},
-		{
-			name:'dog',
-			img: 'dog.jpg'
-		},
-		{
-			name:'elephant',
-			img: 'elephant.jpg'
-		},
-		{
-			name:'fox',
-			img: 'fox.jpg'
-		},
-		{
-			name:'dog',
-			img: 'dog.jpg'
-		},
-		{
-			name:'elephant',
-			img: 'elephant.jpg'
-		},
-		{
-			name:'fox',
-			img: 'fox.jpg'
 		},
 		{
 			name:'apple',
@@ -57,44 +57,44 @@ document.addEventListener('DOMContentLoaded', () => {
 			img: 'banana.jpg'
 		},
 		{
-			name:'orange',
-			img: 'orange.jpg'
+			name:'dog',
+			img: 'dog.jpg'
+		},
+		{
+			name:'elephant',
+			img: 'elephant.jpg'
+		},
+		{
+			name:'fox',
+			img: 'fox.jpg'
 		},
 		{
 			name:'grapes',
 			img: 'grapes.jpg'
 		},
 		{
+			name:'monkey',
+			img: 'monkey.jpg'
+		},
+		{
+			name:'orange',
+			img: 'orange.jpg'
+		},
+		{
+			name:'snake',
+			img: 'snake.jpg'
+		},
+		{
 			name:'stobarry',
 			img: 'stobarry.jpg'
 		},
 		{
+			name:'tiger',
+			img: 'tiger.jpg'
+		},
+		{
 			name:'watermelon',
 			img: 'watermelon.jpg'
-		},
-		{
-			name:'dog',
-			img: 'dog.jpg'
-		},
-		{
-			name:'elephant',
-			img: 'elephant.jpg'
-		},
-		{
-			name:'fox',
-			img: 'fox.jpg'
-		},
-		{
-			name:'dog',
-			img: 'dog.jpg'
-		},
-		{
-			name:'elephant',
-			img: 'elephant.jpg'
-		},
-		{
-			name:'fox',
-			img: 'fox.jpg'
 		},
 		{
 			name:'apple',
@@ -105,32 +105,28 @@ document.addEventListener('DOMContentLoaded', () => {
 			img: 'banana.jpg'
 		},
 		{
-			name:'orange',
-			img: 'orange.jpg'
+			name:'dog',
+			img: 'dog.jpg'
+		},
+		{
+			name:'elephant',
+			img: 'elephant.jpg'
+		},
+		{
+			name:'fox',
+			img: 'fox.jpg'
 		},
 		{
 			name:'grapes',
 			img: 'grapes.jpg'
 		},
 		{
-			name:'stobarry',
-			img: 'stobarry.jpg'
+			name:'apple',
+			img: 'apple.jpg'
 		},
 		{
-			name:'watermelon',
-			img: 'watermelon.jpg'
-		},
-		{
-			name:'dog',
-			img: 'dog.jpg'
-		},
-		{
-			name:'elephant',
-			img: 'elephant.jpg'
-		},
-		{
-			name:'fox',
-			img: 'fox.jpg'
+			name:'banana',
+			img: 'banana.jpg'
 		},
 		{
 			name:'dog',
@@ -143,7 +139,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		{
 			name:'fox',
 			img: 'fox.jpg'
-		}
+		},
+		{
+			name:'grapes',
+			img: 'grapes.jpg'
+		},
 	]
 
 	cardArray.sort(() => 0.5 - Math.random());
