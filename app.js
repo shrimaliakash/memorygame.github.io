@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		cardsChoosen  = [];
 		cardsChoosenId = [];
 		resultDisplay.textContent = cardsWon.length;
-		if(cardsWon.length === 72 * j) {
+		if(cardsWon.length === 18 * j) {
 			resultDisplay.textContent = cardsWon.length;
 			for (let i = 0; i < cardArray.length; i++) {
 				var card = document.querySelector('img');
