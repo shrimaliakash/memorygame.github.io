@@ -175,6 +175,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		{
 			name:'monkey',
 			img: 'monkey.jpg'
+		},
+		{
+			name:'snake',
+			img: 'snake.jpg'
+		},
+		{
+			name:'tiger',
+			img: 'tiger.jpg'
+		},
+		{
+			name:'apple',
+			img: 'apple.jpg'
+		},
+		{
+			name:'banana',
+			img: 'banana.jpg'
 		}
 	]
 
