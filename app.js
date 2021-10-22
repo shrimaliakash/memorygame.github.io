@@ -121,28 +121,28 @@ document.addEventListener('DOMContentLoaded', () => {
 			img: 'watermelon.jpg'
 		},
 		{
-			name:'apple',
-			img: 'apple.jpg'
+			name:'dog',
+			img: 'dog.jpg'
 		},
 		{
-			name:'grapes',
-			img: 'grapes.jpg'
+			name:'elephant',
+			img: 'elephant.jpg'
 		},
 		{
-			name:'orange',
-			img: 'orange.jpg'
-		},
-			{
-			name:'grapes',
-			img: 'grapes.jpg'
+			name:'fox',
+			img: 'fox.jpg'
 		},
 		{
-			name:'stobarry',
-			img: 'stobarry.jpg'
+			name:'monkey',
+			img: 'monkey.jpg'
 		},
 		{
-			name:'watermelon',
-			img: 'watermelon.jpg'
+			name:'snake',
+			img: 'snake.jpg'
+		},
+		{
+			name:'tiger',
+			img: 'tiger.jpg'
 		}
 	]
 
