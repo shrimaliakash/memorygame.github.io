@@ -2,7 +2,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	position: absolute;
-	border: 5px solid;
 	margin-top: 30px;
 }
 
