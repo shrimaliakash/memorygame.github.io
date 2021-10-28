@@ -34,3 +34,65 @@ h3 {
 	float: right;
 	font-size: 30px;
 }
+
+img {
+	margin: 5px;
+	width: 50px;
+	height: 50px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 375px) {
+    img {
+        width: 40px;
+		height: 40px;
+    }
+}
+
+@media screen and (width: 320px) {
+    img {
+        width: 30px;
+		height: 30px;
+    }
+}
+
+@media screen and (width: 540px) {
+    img {
+        width: 70px;
+		height: 70px;
+    }
+}
+
+@media screen and (width: 768px) {
+    img {
+        width: 100px;
+		height: 100px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    img {
+        width: 150px;
+		height: 150px;
+    }
+}
+
+@media screen and (width: 1024px) and (height: 600px) {
+    img {
+        width: 90px;
+		height: 90px;
+    }
+}
+
+@media screen and (width: 1280px) {
+    img {
+        width: 120px;
+		height: 120px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    img {
+        width: 122px;
+		height: 122px;
+    }
+}
