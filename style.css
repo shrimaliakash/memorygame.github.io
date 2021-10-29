@@ -1,3 +1,10 @@
+#memory_game {
+	color: #ffff00;
+	font-size: 36px;
+	text-shadow: 2px 2px;
+	text-align: center;
+}
+
 .grid {
 	display: flex;
 	flex-wrap: wrap;
@@ -10,7 +17,7 @@ body {
 	background-image: url('background.jpg');
 }
 
-h3 {
+h2 {
 	text-align: center;
 	color: white;
 }
