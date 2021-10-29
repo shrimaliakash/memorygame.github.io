@@ -6,16 +6,34 @@
 		<title>Memory Game</title>
 		<link rel="stylesheet" href="style.css"></link>
 		<script src="app.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', () => {
+				const newGame = document.querySelector('#new_game');
+				const gameStart = document.querySelector('#game_start');
+				gameStart.style.display = "none";
+				newGame.addEventListener('click', GameStart);
+				function GameStart() {
+					gameStart.style.display = "inline";
+					newGame.style.display = "none";
+				}
+			});
+		</script>
 	</head>
 	<body>
-		<h3><span id="winner"></span></h3>
-		<div class="row">
-			<h3 class="col-md-6">Level: <span id="level">1</span></h3>
-			<h3 class="col-lg-6">Score: <span id="result">0</span></h3>
+		<div id="new_game">
+			<h1 id="memory_game">Memory Game</h1>
+			<h2>New Game</h2>
 		</div>
-		<audio id="sound1" src="./audio.mp3" preload="auto"></audio>
-		<div class="grid">
+		<div id="game_start">
+			<h3><span id="winner"></span></h3>
+			<div class="row">
+				<h2 class="col-md-6">Level: <span id="level">1</span></h2>
+				<h2 class="col-lg-6">Score: <span id="result">0</span></h2>
+			</div>
+			<audio id="sound1" src="./audio.mp3" preload="auto"></audio>
+			<div class="grid">
 
+			</div>
 		</div>	
 	</body>
 </html>
