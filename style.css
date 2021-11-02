@@ -3,7 +3,7 @@
 	font-size: 36px;
 	text-shadow: 2px 2px;
 	text-align: center;
-	cursor: pointer;
+	cursor: default;
 }
 
 #new_game {
