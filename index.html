@@ -10,11 +10,13 @@
 			document.addEventListener('DOMContentLoaded', () => {
 				const newGame = document.querySelector('#new_game');
 				const gameStart = document.querySelector('#game_start');
+				const memoryGame = document.querySelector('#memory_game');
 				gameStart.style.display = "none";
 				newGame.addEventListener('click', GameStart);
 				function GameStart() {
 					gameStart.style.display = "inline";
 					newGame.style.display = "none";
+					memoryGame.style.display = "none";
 				}
 			});
 		</script>
