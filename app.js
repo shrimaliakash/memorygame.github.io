@@ -151,14 +151,24 @@ document.addEventListener('DOMContentLoaded', () => {
 	const grid = document.querySelector('.grid');
 	const resultDisplay = document.querySelector('#result');
 	const winnerDisplay = document.querySelector('#winner');
+	const game_over = document.querySelector('#game_over');
+	const level_text = document.querySelector('#level_text');
+	const score_text = document.querySelector('#score_text');
 	var cardsChoosen  = [];
 	var cardsChoosenId = [];
 	var cardsWon = [];
 	const level = document.querySelector('#level');
 	let j = 1;
-
+	
+	game_over.style.display = "none";
 	var card_image= document.createElement('img');
 	card_image.setAttribute('src', 'blank.jpg');
+
+
+	const startingMinutes = 2;
+	let time = startingMinutes * 60;
+
+	const countdownEl = document.getElementById("countdown");
 
 	function createBoard() {
 		for (let i = 0; i < cardArray.length; i++) {
@@ -198,17 +208,53 @@ document.addEventListener('DOMContentLoaded', () => {
 			createBoard();
 		}
 	}
+	
 
 	function flipCard() {
+
+		setTimeout(timer, 100);
 		var cardId = this.getAttribute('id');
 		cardsChoosen.push(cardArray[cardId].name);
 		cardsChoosenId.push(cardId);
 		this.setAttribute('src', cardArray[cardId].img);
 		document.getElementById('sound1').play();
+
 		if(cardsChoosen.length == 2) {
+			// if(cardArray[cardId].name != cardArray[cardId].name) {
+			// 	setTimeout(checkForMatch, 500);
+			// } else {
+			// 	cardsChoosen.style.pointerEvents = "none";
+			// 	this.setAttribute('src', 'blank.jpg')
+			// }
 			setTimeout(checkForMatch, 500);
 		}
 	}
 
 	createBoard();
+	setTimeout(timer, 100);
+
+	function timer() {
+		const minutes = Math.floor(time / 60);
+		let seconds = time % 60;
+		seconds = seconds < 10 ? '0' + seconds : seconds;
+		countdownEl.innerHTML = `${minutes}: ${seconds}`;
+		time--;
+		if(time == '-1') {
+			game_over.style.display = "inline";
+			grid.style.display = "none";
+			resultDisplay.style.display = "none";
+			countdownEl.style.display = "none";
+			level_text.style.display = "none";
+			score_text.style.display = "none";
+			setTimeout(function () {
+				location.reload(true);
+			}, 5000)
+		} 
+	}
+
+        function gameOver() {
+			window.location.reload();
+        }
+
+
 });
