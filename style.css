@@ -27,7 +27,7 @@ body {
 	background-image: url('background.jpg');
 }
 
-h2 {
+h2, p {
 	text-align: center;
 	color: white;
 }
@@ -38,17 +38,24 @@ h2 {
 	height: 20px;
 }
 
-.row .col-md-6 {
+.row .col-md-4 {
 	margin: 0px;
 	padding: 0px;
 	float: left;
 	font-size: 30px;
 }
 
-.row .col-lg-6 {
+.row .col-lg-4 {
 	margin: 0px;
 	padding: 0px;
 	float: right;
+	font-size: 30px;
+}
+
+.row .col-sm-4 {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
 	font-size: 30px;
 }
 
@@ -112,4 +119,14 @@ img {
         width: 122px;
 		height: 122px;
     }
+}
+
+
+#game_over {
+  	color: #FF0000;
+	font-size: 36px;
+	text-shadow: 2px 2px;
+	text-align: center;
+	padding-top: 150px;
+	cursor: default;
 }
