@@ -39,21 +39,21 @@ h2, p {
 }
 
 .row .col-md-4 {
-	margin: 0px;
+	margin: 20px;
 	padding: 0px;
 	float: left;
 	font-size: 30px;
 }
 
 .row .col-lg-4 {
-	margin: -30px;
+	margin: 20px;
 	padding: 0px;
 	float: right;
 	font-size: 30px;
 }
 
 .row .col-sm-4 {
-	margin: 0px;
+	margin: 20px;
 	padding: 0px;
 	text-align: center;
 	font-size: 30px;
