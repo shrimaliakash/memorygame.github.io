@@ -172,6 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function createBoard() {
 		for (let i = 0; i < cardArray.length; i++) {
+			time = startingMinutes * 60;
 			var card = document.createElement('img');
 			card.setAttribute('src', 'blank.jpg');
 			card.setAttribute('id', i);
