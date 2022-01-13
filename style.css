@@ -41,14 +41,12 @@ h2, p {
 .row .col-md-4 {
 	margin: 20px;
 	padding: 0px;
-	float: left;
 	font-size: 30px;
 }
 
 .row .col-lg-4 {
 	margin: 20px;
 	padding: 0px;
-	float: right;
 	font-size: 30px;
 }
 
